@@ -1,0 +1,180 @@
+/*  *********** MAIN CONTENT *********** */
+body {
+    background-color:#facfec;
+    background-image: url(heart_background_2.png);
+    background-repeat: repeat; 
+  } 
+h1 {
+    font-family: 'Montez', cursive;
+    font-size: 150pt;
+    color: #F854F2;
+    text-align: center;
+    filter:drop-shadow(10px 10px 10px #04b5a3); 
+  }
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+p {
+    font-size: 50pt;
+    font-family: 'Cherry Bomb One', cursive;
+    color: #F854F2;
+    text-align: center;
+    filter:drop-shadow(10px 10px 10px #04b5a3); 
+  }
+.long {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    margin: 100px;
+}
+.hide span{
+    opacity:0;
+    font-family: 'Creepster', cursive;
+    color: black;
+    filter:drop-shadow(10px 10px 10px red); 
+}
+
+footer .love {
+    opacity:0;
+    font-family: 'Montez', cursive;
+    font-size: 150pt;
+    color: #F854F2;
+    text-align: center;
+    filter:drop-shadow(10px 10px 10px #04b5a3); 
+}
+/* ++++++++++++++++++++++ SNOW GRID SECTION ++++++++++++++++++++++ */
+.snow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+.snow_one {
+        grid-column: 1;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+.snow_two {
+        grid-column: 2;
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+/* ++++++++++++++++++++++ TUG OF WAR GRID SECTION ++++++++++++++++++++++ */
+.fourth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.fourth_text {
+    place-self: center;
+}
+.tug {
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.tug_fern {
+    grid-column: 2;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+/* ++++++++++++++++++++++ GRASS FLEX SECTION ++++++++++++++++++++++ */
+.fifth {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.grass_one {
+    position: relative;
+    height: 70%;
+    z-index: 3;
+    margin-left: 5%;
+    flex-shrink: 1;
+}
+.grass_two {
+    position: relative;
+    height: 70%;
+    margin-left: 10%;
+    margin-top: -50px;
+    z-index: 2;
+    flex-grow: 1;
+}
+
+.grass_three {
+    position: relative;
+    height: 70%;
+    margin-left: 20%;
+    margin-top: -50px;
+    z-index: 1;
+    flex-grow: 1;
+}
+/* ++++++++++++++++++++++ HOVER STATES++++++++++++++++++++++ */
+
+img:hover {
+    box-shadow: 0px 10px 10px 10px  #ff0378; 
+}
+
+p:hover {
+    font-family: 'Creepster', cursive;
+    color: black;
+    filter:drop-shadow(10px 10px 10px red); 
+}
+
+H1:hover {
+    font-family: 'Creepster', cursive;
+    color: black;
+    filter:drop-shadow(10px 10px 10px red); 
+}
+.hide span:hover {
+    opacity:1;
+}
+
+footer .love:hover {
+    opacity:1;
+    font-family: 'Montez', cursive;
+    font-size: 150pt;
+    color: #F854F2;
+    text-align: center;
+    filter:drop-shadow(10px 10px 10px #04b5a3); 
+}
+/* ++++++++++++++++++++++ MEDIA QUERIES ++++++++++++++++++++++ */
+@media (min-width: 500px) and (max-width: 1280px) {
+    img {
+        max-width: 60%;
+        max-height: max-content;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    p {
+        font-size: 30pt;
+    }
+  }
+
+@media (max-width: 500px) {
+    img {
+        max-width: 40%;
+        max-height: max-content;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    p {
+        font-size: 20pt;
+    }
+  }
